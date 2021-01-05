@@ -11,15 +11,55 @@
         crossorigin="anonymous"></script>
     <script src="https://code.jquery.com/jquery-3.5.1.js"
         integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc=" crossorigin="anonymous"></script>
+    <style>
+        .mic {
+            height: 10px;
+            width: 20px;
+        }
+    </style>
 </head>
 
 <body>
     <div class='container'>
-        <div class='row'>
-            
+        <div class='row col-12'>
+            <div class='col-md-12'>
+                <!-- <p style='color:white'>Hi, this is Annabeth, How can I help you? </p> -->
+            </div>
+            <div class='col-md-12'>
+                <!-- <input type='text' /> -->
+                <form name='selectAPIs' id='selectAPIs' action="javascript:void(0)" onsubmit="addingAPI()">
+                    <label for="apiRequired">Choose an API:</label>
+                    <select name="leads" id="leads">
+                        <optgroup label="Leads">
+                            <option value="create">Create</option>
+                            <option value="retreive">Retreive</option>
+                        </optgroup>
+                        <optgroup label="Users">
+                            <option value="create">Create</option>
+                            <option value="retreive">Retreive</option>
+                        </optgroup>
+                        <optgroup label="Activities">
+                            <option value="create">Create</option>
+                            <option value="retreive">Retreive</option>
+                        </optgroup>
+                        <optgroup label="Tasks">
+                            <option value="create">Create</option>
+                            <option value="retreive">Retreive</option>
+                        </optgroup>
+                    </select>
+                    <button type="submit">Add</button>
+                </form>
+            </div>
+            <div class='col-md-6'>
+                <img class='mic' src='mic.png' />
+            </div>
         </div>
     </div>
-
+<script>
+    const addingAPI=()=>{
+        
+    }
+</script>
 </body>
 
 </html>
